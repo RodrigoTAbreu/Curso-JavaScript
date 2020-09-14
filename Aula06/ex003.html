@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color:rgba(38, 38, 226, 0.829);
+            color: whitesmoke;
+            font: italic 18px Arial;
+        }
+        h1{
+            color:tomato;
+        }
+        p{
+            color:violet;
+        }
+        #nota{
+            color: white;
+        }
+    </style>
+    <title>Aula - 06 JS</title>
+</head>
+<body>
+    <h1>OLÁ, Mundo!!!!</h1>
+        <p>Já me livrei da maldição!!!! Agora na aula 06.</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //Convertendo a entrada de PROMPT para inteiro com o comando Number.parseINT -- Int significa inteiro -- Float ponto flutuante
+        var n2 = Number(window.prompt('Digite outro número: ')) // o mesmo ocorre aqui, converte a entrada TEXTO em numero.
+        var s = n1 + n2
+        window.alert('A soma dos valores é '+ s)
+    </script>
+    
+    <hr>
+    <p id="nota">NOTA DA AULA:</p>
+    <p id="nota"> Nesta aula aprendemos o comandos:</p>
+        <br>Number.parseInt  --> convertendo para INTEIRO.
+        <br>Number.parseFloat  --> convertendo para flutuante
+        <br>Ou usando apenas o Number e o java identificará o tipo de valor, INT ou FLOAT
+
+</body>
+</html>

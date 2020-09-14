@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color:rgba(38, 38, 226, 0.829);
+            color: whitesmoke;
+            font: italic 18px Arial;
+        }
+        h1{
+            color:tomato;
+        }
+        p{
+            color:violet;
+        }
+        #nota{
+            color: white;
+        }
+    </style>
+    <title>Aula - 04 JS</title>
+</head>
+<body>
+    <h1>OLÁ, Mundo!!!!</h1>
+    <p>Já me livrei da maldição!!!!</p>
+        <script>
+        window.alert('Minha primeira MSG') /*Alerta ao carregar a tela */
+        window.confirm('Está gostando de Java Script ?') /*MSG com a opção de CONFIRMAR em que o usuário deve clicar em OK ou CANCELAR */
+        var nome = window.prompt('Qual é o seu nome ?') /*fazendo com que a variavel NOME receba o que foi digitado por meio do comando WINDOW.PROMPT */
+        window.alert('Seja bem vindo(a) '+ nome)/*Monstrando o conteúdo da variável NOME, digitada anteriormente.*/
+    </script>
+    <hr>
+    <p id="nota">NOTA DA AULA:</p>
+    <p id="nota"> Essa aula consiste em apresentar os comandos ALERT / CONFIRM  e PROMPT.</p>
+    <br>Adicionamos ainda o conteúdo digitado em PROMPT em uma variável e em seguida apresentamos ela como ALERT, como pudemos perceber.
+
+</body>
+</html>
