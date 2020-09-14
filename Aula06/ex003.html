@@ -26,9 +26,13 @@
         <p>Já me livrei da maldição!!!! Agora na aula 06.</p>
     <script>
         var n1 = Number(window.prompt('Digite um número: ')) //Convertendo a entrada de PROMPT para inteiro com o comando Number.parseINT -- Int significa inteiro -- Float ponto flutuante
-        var n2 = Number(window.prompt('Digite outro número: ')) // o mesmo ocorre aqui, converte a entrada TEXTO em numero.
+        var n2 = Number(window.prompt('Digite outro número: ')) // o mesmo ocorre aqui, converte a entrada TEXTO em numero. Podemos usar Number.parseInt ou Number.parseFloat
         var s = n1 + n2
-        window.alert('A soma dos valores é '+ s)
+        window.alert('A soma dos valores é '+ s) //Aqui o S é valor de number
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
+        s.toString() // ou STRING(S) também converte para string
+    
+        
     </script>
     
     <hr>
