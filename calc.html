@@ -153,6 +153,8 @@
 
 <body>
     <div id="display">0</div>
+
+    
     <input id="n01"type="button" value="1" onclick="n1">
     <input id="n02" type="button" value="2" onclick="n2">
     <input id="n03" type="button" value="3" onclick="n3">
@@ -175,6 +177,22 @@
     <br>
     <input id="limpar" type="button" value="LIMPA" onclick="limp">
     <input id="igual" type="button" value="=" onclick="result">
+    <script>
+        var a = window.document.getElementById("display")
+        a.addEventListener('mouseenter',entrar)
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('click', clickn)
+        function entrar(){
+            a.style.background='black'
+        }
+        function sair() {
+            a.style.background='rgb(194, 189, 189)'
+        }
+        function clickn(){
+            
+        }
+
+    </script>
 
 
 
