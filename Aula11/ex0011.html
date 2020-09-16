@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+        h1{
+            font-family: Cambria;
+            color: red;
+            font-size: 35px;
+            text-align: center;
+        }
+        input#botaomostrar{
+            color:rgb(192, 105, 24);
+            font-size: 20px;
+            margin-top: 15px;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+       div#mostra{
+           margin-top: 20px;
+       }
+    </style>
+</head>
+
+<body>
+    <h1>Vefericador de Nacionalidade</h1> <!---TITULO DA PÁGINA-->
+    <strong> Informe o País de Origem: </strong>
+    <br>
+    <input type="text" name="txtpais" id="txtorigem"> <!--- CAIXA DE ENTRADA INPUT DO TIPO TEXTO-->
+    <br>
+    <input id="botaomostrar" type="button" value="Vereficar" onclick="mostrar()" > <!--BOTÃO COM FUNÇÃO ONCLIC QUE SERÁ USADA POSTERIORMENTE COM FUNCTION-->
+    <br>
+    <div id="mostra"> </div> <!---LOCAL ONDE SERÁ MOSTRADO O RESULTADO DO IF-->
+    <div id="imagens">
+
+    </div>
+</body>
+
+    <script >                                                      // INICIO DO SCRIP 
+        function mostrar() {                                     //INICIANDO A FUNÇÃO CHAMANDO O METODO MONSTRAR DO ONCLICK
+            
+            //var a = window.document.getElementById('input#txtorigem')   //CRIANDO A VARIAVEL "A" E ATRIBUINDO A ELA O CONTEUDO DO INPUT DE ID "TXTORIGEM" essa linha não é necessária pois a VARIAVEL CONT já está recebendo o valor em TEXTO
+            var res = document.querySelector('div#mostra')      // CRIANDO A VARIAVEL "RES" RECEBENDO O CONTEUDO DA DIV "MOSTRA"
+            var cont = String(txtorigem.value)              // CRIANDO A VARIAVEL CONT ONDE ELA ATRIBUI O VALOR TXTORIGEM
+            res.innerHTML = `Você informou <strong>${cont}</strong>.`
+                            
+            if (cont == 'BRASIL' || cont == 'brasil' || cont=='Brasil'){                              // TESTE LOGICO SE A VARIAVEL CONT FOR IGUAL A "Brasil"
+                res.innerHTML += `Olá, você é <strong>Brasileiro.</strong>` // SENDO VERDADEIRO IMPRIME ESSA LINHA
+                var img = document.createElement("IMG")
+                img.src = 'img/br.png';
+                document.getElementById('imagens').appendChild(img);
+
+            }else {
+                res.innerHTML += `Olá você é <strong>Estrangeiro.</strong> ` // SENDO FALSO IMPRIME ESSA LINHA.
+            }
+
+        }
+    </script>                                                   <!---FIM DO SCRIPT-->
+
+</html>

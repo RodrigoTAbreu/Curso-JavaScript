@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - 11 </title>
+</head>
+<body>
+    <h1>Vereficador de Velocidade.</h1>
+        <br>
+        Insira a velocidade atual: <input type="number" name="vel" id="vel">
+        <input id="calc" type="button" value="Calcular" onclick="calc()">
+        <br>    
+        <div id="res"></div></div>
+    <script>
+    
+    function calc(){
+        var vel = window.document.querySelector('input#vel')
+        var res = window.document.querySelector('div#res')
+        var velocidade = Number(vel.value)
+        if (velocidade > 60){
+            res.innerHTML = `<p>A velocidade é de <strong>${velocidade}</strong>km/h.</p> Foi foi <strong>Multado !!!</strong>`
+
+        }else {
+            res.innerHTML = `Velocidade dentro do limite. Boa Viagem!`
+        }
+    }
+    </script>
+    
+</body>
+</html>
