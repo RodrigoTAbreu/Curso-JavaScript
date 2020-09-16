@@ -4,26 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula - 11 </title>
+    <style>
+    body{
+        text-align: center;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+    }
+    h1{
+        font-family: Cambria;
+        color: red;
+        font-size: 35px;
+        text-align: center;
+    }
+    input#calc{
+        color:rgb(192, 105, 24);
+        font-size: 20px;
+        margin-top: 15px;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+   div#res{
+       margin-top: 20px;
+   }
+</style>
 </head>
 <body>
     <h1>Vereficador de Velocidade.</h1>
         <br>
-        Insira a velocidade atual: <input type="number" name="vel" id="vel">
+        Insira a velocidade atual: <br>
+        <input type="number" name="vel" id="vel">
+        <br>
         <input id="calc" type="button" value="Calcular" onclick="calc()">
         <br>    
-        <div id="res"></div></div>
+        <div id="res"></div>
     <script>
     
     function calc(){
+        var time = new Date();
         var vel = window.document.querySelector('input#vel')
         var res = window.document.querySelector('div#res')
         var velocidade = Number(vel.value)
         if (velocidade > 60){
-            res.innerHTML = `<p>A velocidade é de <strong>${velocidade}</strong>km/h.</p> Foi foi <strong>Multado !!!</strong>`
-
+            res.innerHTML = `<p>A velocidade é de <strong>${velocidade}</strong>km/h.</p> Você foi <strong>Multado !!!</strong><p>`;
         }else {
-            res.innerHTML = `Velocidade dentro do limite. Boa Viagem!`
+            res.innerHTML = `Velocidade dentro do limite. Boa Viagem!<p>`
         }
+
+        res.innerHTML += `Horário de registro: ${time.getHours()}`;
+        res.innerHTML += `:${time.getMinutes()}`;
+        res.innerHTML += `:${time.getSeconds()}`;   
+        res.innerHTML += ` em: ${time.getDay()}/${time.getMonth()}/${time.getFullYear()}`
+
     }
     </script>
     

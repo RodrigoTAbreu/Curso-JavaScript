@@ -38,9 +38,8 @@
     <input id="botaomostrar" type="button" value="Vereficar" onclick="mostrar()" > <!--BOTÃO COM FUNÇÃO ONCLIC QUE SERÁ USADA POSTERIORMENTE COM FUNCTION-->
     <br>
     <div id="mostra"> </div> <!---LOCAL ONDE SERÁ MOSTRADO O RESULTADO DO IF-->
-    <div id="imagens">
-
-    </div>
+    
+    <div id="imagem"></div>
 </body>
 
     <script >                                                      // INICIO DO SCRIP 
@@ -53,9 +52,8 @@
                             
             if (cont == 'BRASIL' || cont == 'brasil' || cont=='Brasil'){                              // TESTE LOGICO SE A VARIAVEL CONT FOR IGUAL A "Brasil"
                 res.innerHTML += `Olá, você é <strong>Brasileiro.</strong>` // SENDO VERDADEIRO IMPRIME ESSA LINHA
-                var img = document.createElement("IMG")
+                var img = document.getElementById("imagem")
                 img.src = 'img/br.png';
-                document.getElementById('imagens').appendChild(img);
 
             }else {
                 res.innerHTML += `Olá você é <strong>Estrangeiro.</strong> ` // SENDO FALSO IMPRIME ESSA LINHA.
