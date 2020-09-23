@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---<input type="text" name="dadotxt" id="txtdado">
+    <input type="button" value="mostrar" id="mostra" onclick="mostratxt()"> -->
+    <div id="res"></div>
+    <script>
+        var d = new Date()
+        alert(d.getMonth()+1)
+        alert(d.getMinutes())
+
+        
+        /* LAÇO DE REPETIÇÃO COM FOR
+        var count = 0
+        for (count=0; count <=5; count++)
+            console.log(count);
+        */
+        /* LAÇO DE REPETIÇÃO COM WHILE
+
+        var count = 0;
+        while (count < 9) {
+            console.log(count)
+            count ++;
+
+        }
+        */
+
+    /* LAÇO DE REPETIÇÃO COM IF ELSE
+        function mostratxt(){
+            var year = document.querySelector("input#txtdado")
+            var resp = document.querySelector("div#res")
+            var idade = Number(year.value)
+            if (idade >= 18 ){
+                resp.innerHTML = `Você é maior de idade.`
+            }else{
+                resp.innerHTML = `Você ainda é menor de idade` 
+            }
+            }
+
+            */
+
+        /* DICIIONARIO
+
+        var fruta = {nome:"maça", cor:"vermelha", nome:"banana", cor="amarela", nome:"uva", cor: "roxa"}
+        resp.innerHTML = fruta.nome('amarela');*/
+
+
+        /* LISTA
+        
+        var lista = ['MAÇA', 'BANANA', 'PERA']
+        var resp = document.querySelector("div#res")
+        resp.innerHTML = `A lista criada foi ${lista}`
+        lista.push('UVA')
+        resp.innerHTML += `<p> Adicionando itens com Push: ${lista}`
+        lista.pop()
+        resp.innerHTML += `<p> Removendo itens com POP: ${lista}`
+        res.innerHTML += `Temos `+ lista.length +  ` na lista.`
+        res.innerHTML += `<p> Mostrando em ordem da lista: `+ lista.reverse()
+        res.innerHTML+= `<p> Alterando caracter entre os itens da lista ${lista.join('-->>')}`
+                    */
+        
+    </script>
+    
+</body>
+</html>
