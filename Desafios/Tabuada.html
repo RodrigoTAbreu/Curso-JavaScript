@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculando - Tabuada</title>
+    <title>Desafio 4- Tabuada</title>
 </head>
 <body>
-    <section>
-        <div>
-            <h1> Calcule a Tabuada</h1>
+    <header>
+        <h1> Calcule a Tabuada</h1>
+    </header>
+    <section>      
+        
             <div>
-                <label for="input">Informe o Numero:</label>
-                <input id="numero" type="number" name="txtnumber" id="txtnumber">
-                <input id="calc" type="button" value="calcular" onclick="calcular()">
-                <select name="res" id="resultado"> Esse é o select</select>
-                <div id="res">
-                    <h4>Aguardando Resultado</h4>
-                </div>
+               <p>Numero: 
+                <input type="number" name="txtnumber" id="txtnumber">
+                <input type="button" value="Calcular" onclick="tabuada()"></p>
             </div>
-
-        </div>
+        
+            <div>
+                <select name="tabuada" id="seltab" size="10"> Esse é o select</select>
+                
+            </div>
+        
+        
     </section>
-    <script src="_js/script4.js"></script>
+    <footer>
+        By  - Rodrigo Abreu
+    </footer>
+    <script src="_js/script04-tab-02.js"></script>
 </body>
 </html>
